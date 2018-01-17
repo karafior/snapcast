@@ -8,7 +8,6 @@ Summary:        Synchronous audio player
 License:        GPLv3
 URL:            https://github.com/badaix/snapcast
 Source0:        snapcast-0.12.0.tar.gz
-Patch0:         snapcast-fedora.patch                                                                 
 
 BuildRequires:  gcc-c++
 BuildRequires:  libstdc++-static
@@ -47,7 +46,6 @@ Snapcast server daemon
 
 %prep
 %setup
-%patch0 -p1 -b .fedora
 
 %build
 %make_build
